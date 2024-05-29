@@ -2,7 +2,6 @@ import pandas as pd
 from portfolio import Portfolio, TickerWeight
 from datetime import date
 
-
 def generate_portfolio_excel(portfolio_1: Portfolio, portfolio_2: Portfolio):
     """
     Generate an Excel sheet with volatility and return metrics for two portfolios.
@@ -43,6 +42,7 @@ def generate_portfolio_excel(portfolio_1: Portfolio, portfolio_2: Portfolio):
         metrics_df.to_excel(writer, sheet_name='Volatility Metrics', index=False)
         return_df.to_excel(writer, sheet_name='Return Metrics', index=False)
 
+    print('Produced XSLX file portfolio_metrics.xslx in current directory.')
 
 # Initialize two portfolios
 assets_1 = [TickerWeight('SPY', 0.6), TickerWeight('AGG', 0.4)]
