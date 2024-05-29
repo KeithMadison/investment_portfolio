@@ -38,7 +38,7 @@ class Portfolio:
         return data
 
     def calculate_market_returns(self) -> pd.DataFrame:
-        """Calculate daily market returns."""
+        """Calculate market returns with specified frequency."""
         returns = self.market_data.pct_change().dropna()
         return returns
 
