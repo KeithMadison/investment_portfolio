@@ -10,7 +10,7 @@ TickerWeight = namedtuple('TickerWeight', ['ticker', 'weight'])
 
 @dataclass
 class Portfolio:
-    """Class to represent a financial portfolio.
+    """Class for representing a financial portfolio.
 
     Attributes:
         assets (list[TickerWeight]): List of (ticker: str, weight: float) tuples representing assets and their weights.
