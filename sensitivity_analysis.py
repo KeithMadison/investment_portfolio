@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 from datetime import date
 from portfolio import Portfolio, TickerWeight
 
-def plot_sensitivity_analysis(start_date_str, end_date_str):
+def plot_sensitivity_to_allocation(start_date_str, end_date_str):
     """
-    Perform sensitivity analysis on portfolio metrics.
+    Perform sensitivity analysis on portfolio metrics (with respect to TIPS allocation).
 
     Args:
         start_date_str (str): Start date in YYYY-MM-DD format.
@@ -71,4 +71,4 @@ def plot_sensitivity_analysis(start_date_str, end_date_str):
     plt.show()
 
 # Run the sensitivity analysis
-plot_sensitivity_analysis('2021-01-01', '2023-12-31')
+plot_sensitivity_to_allocation('2021-01-01', '2023-12-31')
